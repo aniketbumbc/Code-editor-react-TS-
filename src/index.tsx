@@ -38,6 +38,11 @@ const App = () => {
     setCode(result.outputFiles[0].text);
   };
 
+  const html = `<script> 
+  ${code}
+
+</script>`;
+
   return (
     <div>
       <textarea
@@ -48,6 +53,8 @@ const App = () => {
         <button onClick={codeSubmitCode}>Submit Code</button>
       </div>
       <pre>{code}</pre>
+
+      <iframe sandbox='allow-scripts' srcDoc={html} title='htmlShow' />
     </div>
   );
 };
