@@ -30,7 +30,6 @@ window.addEventListener('message',(event) => {
 
 const Preview: React.FC<PreviewProps> = ({ code }) => {
   const iframeRef = useRef<any>();
-
   useEffect(() => {
     iframeRef.current.srcdoc = html;
     iframeRef.current.contentWindow.postMessage(code, '*');

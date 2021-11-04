@@ -8,10 +8,10 @@ const CodeCell = () => {
   const [input, setInput] = useState('');
   const [code, setCode] = useState('');
 
-  const codeSubmitCode = async () => {
-    const output = await bundler(input);
-    setCode(output);
-  };
+  // const codeSubmitCode = async () => {
+  //   const output = await bundler(input);
+  //   setCode(output);
+  // };
 
   return (
     <Resizable direction='vertical'>
