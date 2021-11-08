@@ -42,7 +42,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
         className='button button-format is-primary is-small'
         onClick={onFormatClick}
       >
-        Format Code
+        Format Code In JS
       </button>
       <MonacoEditor
         editorDidMount={onEditorDidMount}
